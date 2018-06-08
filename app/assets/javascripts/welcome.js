@@ -8,7 +8,7 @@ $(document).ready( function() {
     var list = $('#products')
     products.forEach(function(products) {
       debugger
-      var li = '<li data-product-id="' + products.id + '">' + products.name + '-' + products.base_price + '-' + products.description + '</li>'
+      var li = '<li data-product-id="' + products.id + '">' + '<br>' + products.name + '<br>' + '$' + products.base_price + '<br>' + products.description + '<br>' + products.quantity_on_hand + '<br>' + products.color + '<br>' + products.weight + '</li>'
       list.append(li)
     })
   // }).fail( function(err) {
